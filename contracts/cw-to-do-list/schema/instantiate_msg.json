@@ -1,9 +1,11 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
   "title": "InstantiateMsg",
+  "description": "Message for contract initializing",
   "type": "object",
   "properties": {
     "owner": {
+      "description": "owner of this to do list",
       "type": [
         "string",
         "null"

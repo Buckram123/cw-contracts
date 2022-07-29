@@ -1,8 +1,10 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
   "title": "QueryMsg",
+  "description": "Messages for viewing the state",
   "oneOf": [
     {
+      "description": "Check to do item at id",
       "type": "object",
       "required": [
         "query_entry"
@@ -25,6 +27,7 @@
       "additionalProperties": false
     },
     {
+      "description": "List to do items with pagination",
       "type": "object",
       "required": [
         "query_list"
